@@ -5,11 +5,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import telebot
 
 
-from dotenv import load_dotenv, find_dotenv
-import os
-load_dotenv(find_dotenv())
-API_key = os.getenv("API_KOD")
-bot_username = os.getenv("BOT_USERNAME")
+
 
 bot = telebot.TeleBot(API_key)
 
