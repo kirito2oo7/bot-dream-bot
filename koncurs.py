@@ -2,10 +2,7 @@ from telebot import types
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import telebot
 import sqlite3
-from dotenv import load_dotenv, find_dotenv
-import os
-load_dotenv(find_dotenv())
-API_key = os.getenv("API_KOD")
+
 
 bot = telebot.TeleBot(API_key)
 
