@@ -9,24 +9,13 @@ from telebot.apihelper import ApiException
 import sqlite3
 from dotenv import load_dotenv, find_dotenv
 import os
+import time
 load_dotenv(find_dotenv())
 API_key = os.getenv("API_KOD")
 bot_username = os.getenv("BOT_USERNAME")
 
 
 bot = telebot.TeleBot(API_key)
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "I'm alive!"
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-
-
 
 bmd = "CAACAgIAAxkBAAIBlmdxZi6sK42VCA3-ogaIn30MXGrmAAJnIAACKVtpSNxijIXcPOrMNgQ"
 
